@@ -1,0 +1,18 @@
+ <table>
+    <tbody>
+      <tr>
+        <th>
+          EMP ID
+        </th>
+        <th>
+          EMP NAME
+        </th>
+      </tr>
+      <tr *ngFor="let emp of allEmployee">
+        <td> {{emp.empId}} </td>
+        <td>
+          <span>{{emp.empName}}</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>

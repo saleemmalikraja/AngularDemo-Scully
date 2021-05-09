@@ -1,0 +1,8 @@
+<mat-tab-group>
+  <ng-container *ngFor="let eachConfig of configuration">
+    <mat-tab [label]="eachConfig?.label"> {{eachConfig?.content}}
+        <ng-container *ngComponentOutlet="eachConfig.componentName">
+          </ng-container>
+    </mat-tab>
+  </ng-container>
+</mat-tab-group>

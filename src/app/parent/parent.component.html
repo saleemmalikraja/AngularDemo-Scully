@@ -1,0 +1,2 @@
+<p *ngIf="!!message">Message: {{message}}</p>
+<app-child-one (messageEvent)="receiveMessage($event)"></app-child-one>
